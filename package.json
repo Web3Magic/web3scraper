@@ -1,0 +1,24 @@
+{
+  "name": "web3scraper",
+  "version": "1.0.0",
+  "description": "A simple News aggrigator for all things web 3 related",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Web3Magic/web3scraper.git"
+  },
+  "keywords": [
+    "scraper",
+    "js",
+    "api"
+  ],
+  "author": "Foxy Roxy Hello@web3magic.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Web3Magic/web3scraper/issues"
+  },
+  "homepage": "https://github.com/Web3Magic/web3scraper#readme"
+}
