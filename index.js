@@ -10,9 +10,16 @@ app.get('/', (req,res) =>{
   res.json('Welcome to the Web3 News API')
 })
 
-//This Grabs the URL of a Website
+//Get endpoint localhost 8000/news
 app.get('/news', (req,res) => {
-  axios.get()
+  axios.get('https://www.coindesk.com/markets/')
+  //Gets the Url endpoint of a website and outputs html response
+    .then((response) => {
+    const html = response.data
+  //Initilized Cheerio 
+    const $ = cheerio.load(html)
+  // Looking for any a tag that has web3 keyword
+  })
 })
 
 //PORT Listener and Console Log out the port
