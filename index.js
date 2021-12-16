@@ -4,6 +4,9 @@ const express = require('express')
 const cheerio = require('cheerio')
 
 const app = express()
+// articles array 
+const articles = []
+
 
 // Listining On Homepage & Response
 app.get('/', (req,res) =>{
