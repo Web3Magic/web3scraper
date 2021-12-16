@@ -19,7 +19,10 @@ app.get('/news', (req,res) => {
   //Initilized Cheerio 
       const $ = cheerio.load(html)
   // Looking for any a tag that has nft keyword
-      $('a:contains("nft")')
+      $('a:contains("nft")', html).each(function () {
+        const title = $(this).text()
+        const url = $(this).attr('href')
+      })
   })
 })
 
