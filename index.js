@@ -15,7 +15,7 @@ app.get('/', (req,res) =>{
 
 //Get endpoint localhost 8000/news
 app.get('/news', (req,res) => {
-  axios.get('https://cryptonews.com/news/')
+  axios.get('https://www.theguardian.com/technology/cryptocurrencies')
   //Gets the Url endpoint of a website and outputs html response
     .then((response) => {
       const html = response.data
@@ -23,7 +23,7 @@ app.get('/news', (req,res) => {
       const $ = cheerio.load(html)
      
   // Looking for any a tag that has nft keyword
-      $('a:contains("NFTs")', html).each(function () {
+      $('a:contains("crypto")', html).each(function () {
         const title = $(this).text()
         const url = $(this).attr('href')
         articles.push({
