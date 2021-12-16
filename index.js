@@ -5,6 +5,9 @@ const cheerio = require('cheerio')
 
 const app = express()
 
+//list of news sources
+
+
 // articles array 
 const articles = []
 
